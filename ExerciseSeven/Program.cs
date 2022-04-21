@@ -1,42 +1,44 @@
 ﻿Console.WriteLine("Введите число: ");
 int a = Convert.ToInt32(Console.ReadLine());
 
-if(a >=100 && a <=999)
+if(a<=99)
 {
-    int b = a % 10;
-    Console.WriteLine(b);
+    Console.WriteLine("Третьей цифры нет");
 }
-    if(a>=1000 && a<=9999)
+    if(a >=100 && a <=999)
     {
-        int b = a / 10;
-        int c = b % 10;
-        Console.WriteLine(c);
+        int b = a % 10;
+        Console.WriteLine(b);
     }
-        if(a>=10000 && a<=99999)
+        if(a>=1000 && a<=9999)
         {
-        int b = a / 10;
-        int c = b / 10;
-        int d = c % 10;
-        Console.WriteLine(d);
+            int b = a / 10;
+            int c = b % 10;
+            Console.WriteLine(c);
         }
-            if(a>=100000 && a<=999999)
+            if(a>=10000 && a<=99999)
             {
                 int b = a / 10;
                 int c = b / 10;
-                int d = c / 10;
-                int e = d % 10;
-                Console.WriteLine(e);
+                int d = c % 10;
+                Console.WriteLine(d);
             }
-                if(a>=1000000 && a<=9999999)
+                if(a>=100000 && a<=999999)
                 {
                     int b = a / 10;
                     int c = b / 10;
                     int d = c / 10;
-                    int e = d / 10;
-                    int f = e % 10;
-                    Console.WriteLine(f);
+                    int e = d % 10;
+                    Console.WriteLine(e);
                 }
-                    if(a<=99)
+                    if(a>=1000000 && a<=9999999)
                     {
-                        Console.WriteLine("Третьей цифры нет");
+                        int b = a / 10;
+                        int c = b / 10;
+                        int d = c / 10;
+                        int e = d / 10;
+                        int f = e % 10;
+                        Console.WriteLine(f);
                     }
+                    
+                    
